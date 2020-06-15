@@ -1,3 +1,4 @@
-class Extract < ApplicationRecord
+class Article < ApplicationRecord
   validates :title, presence: true
+
 end

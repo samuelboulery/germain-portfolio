@@ -10,13 +10,57 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_12_171653) do
+ActiveRecord::Schema.define(version: 2020_06_15_145118) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "agendas", force: :cascade do |t|
+    t.date "date"
+    t.time "hour"
+    t.string "place"
+    t.string "role"
+    t.string "show"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "link"
+  end
+
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.string "link"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "extracts", force: :cascade do |t|
     t.string "title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "composer"
+    t.string "musician"
+    t.text "description"
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.string "title"
+    t.string "credits"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "repertories", force: :cascade do |t|
+    t.string "title"
+    t.string "composer"
+    t.string "role"
+    t.string "show"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.string "link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

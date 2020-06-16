@@ -23,25 +23,31 @@ fr:
         role: "Rôle"
         show: "Spectacle"
         link: "URL"
+        published: "Publié"
       article:
         title: "Titre"
         link: "URL"
+        published: "Publié"
       extract:
         title: "Titre"
         composer: "Compositeur"
         musician: "Musicien"
         description: "Description"
+        published: "Publié"
       picture:
         title: "Titre"
         credits: "Crédits"
+        published: "Publié"
       repertory:
         title: "Titre"
         composer: "Compositeur"
         role: "Rôle"
         show: "Spectacle"
+        published: "Publié"
       video:
         title: "Titre"
         link: "URL"
+        published: "Publié"
     errors:
       messages:
         record_invalid: 'La validation a échoué : %{errors}'

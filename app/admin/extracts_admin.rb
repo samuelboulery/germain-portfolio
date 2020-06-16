@@ -10,6 +10,7 @@ Trestle.resource(:extracts) do
     column :composer
     column :musician
     column :description
+    column :published
     actions
   end
 
@@ -20,6 +21,7 @@ Trestle.resource(:extracts) do
     text_field :composer
     text_field :musician
     text_field :description
+    check_box :published
   end
 
   # By default, all parameters passed to the update and create actions will be

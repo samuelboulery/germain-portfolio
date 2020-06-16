@@ -31,6 +31,15 @@ fr:
       cancel: "Non"
 
   admin:
+    navigation:
+      items:
+        users: "Utilisateurs"
+        agendas: "Dates"
+        articles: "Articles de presse"
+        extracts: "Extraits"
+        pictures: "Photos"
+        repertories: "Repertoires"
+        video: "Vidéos"
     titles:
       index: "Liste des %{lowercase_model_name}s"
       new: "%{model_name} (ajout)"

@@ -1,26 +1,29 @@
 Trestle.resource(:agendas) do
   menu do
-    item :agendas, icon: "fa fa-star"
+    item :agendas, icon: "fa fa-calendar-alt"
   end
 
   # Customize the table columns shown on the index view.
-  #
-  # table do
-  #   column :name
-  #   column :created_at, align: :center
-  #   actions
-  # end
+  table do
+    column :date
+    column :hour
+    column :place
+    column :role
+    column :show
+    column :link
+    actions
+  end
 
   # Customize the form fields shown on the new/edit views.
   #
-  # form do |agenda|
-  #   text_field :name
-  #
-  #   row do
-  #     col { datetime_field :updated_at }
-  #     col { datetime_field :created_at }
-  #   end
-  # end
+  form do |agenda|
+    date_field :date
+    time_field :hour
+    text_field :place
+    text_field :role
+    text_field :show
+    text_field :link
+  end
 
   # By default, all parameters passed to the update and create actions will be
   # permitted. If you do not have full trust in your users, you should explicitly

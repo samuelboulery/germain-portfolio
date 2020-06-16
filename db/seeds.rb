@@ -1,5 +1,7 @@
 puts "Seeds begin...."
 
+User.create(email: "marie@marie.com", password: "azerty", first_name: "Admin", last_name: "User")
+
 Extract.create(title: "A Vucchella", composer: "F.P. Tosti", description: "Guitare", musician: "Olivier Lataste")
 Extract.create(title: "Marechiare", composer: "F.P. Tosti", description: "Guitare", musician: "Olivier Lataste")
 Extract.create(title: "Tormento", composer: "F.P. Tosti", description: "Guitare", musician: "Olivier Lataste")
@@ -62,3 +64,4 @@ Agenda.create(date: Date.new(2019,1,11), place:"Opéra de Fribourg", role:"Zweit
 Agenda.create(date: Date.new(2019,1,13), place:"Opéra de Fribourg", role:"Zweiter Priester, Erster geharnischter Mann", show:"Die Zauberflöte, (W. A. Mozart)")
 
 puts "...Seeds end"
+

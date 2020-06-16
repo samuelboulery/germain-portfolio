@@ -11,6 +11,7 @@ Trestle.resource(:agendas) do
     column :role
     column :show
     column :link
+    column :published
     actions
   end
 
@@ -23,6 +24,7 @@ Trestle.resource(:agendas) do
     text_field :role
     text_field :show
     text_field :link
+    check_box :published
   end
 
   # By default, all parameters passed to the update and create actions will be

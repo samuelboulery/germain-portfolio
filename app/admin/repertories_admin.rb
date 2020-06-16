@@ -10,6 +10,7 @@ Trestle.resource(:repertories) do
     column :composer
     column :role
     column :show
+    column :published
     actions
   end
 
@@ -20,7 +21,7 @@ Trestle.resource(:repertories) do
     text_field :composer
     text_field :role
     text_field :show
-
+    check_box :published
   end
 
   # By default, all parameters passed to the update and create actions will be

@@ -8,6 +8,7 @@ Trestle.resource(:pictures) do
   table do
     column :title
     column :credits
+    column :published
     actions
   end
 
@@ -16,6 +17,7 @@ Trestle.resource(:pictures) do
   form do |picture|
     text_field :title
     text_field :credits
+    check_box :published
   end
 
   # By default, all parameters passed to the update and create actions will be

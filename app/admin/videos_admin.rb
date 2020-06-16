@@ -8,6 +8,7 @@ Trestle.resource(:videos) do
   table do
     column :title
     column :link
+    column :published
     actions
   end
 
@@ -16,6 +17,7 @@ Trestle.resource(:videos) do
   form do |video|
     text_field :title
     text_field :link
+    check_box :published
   end
 
   # By default, all parameters passed to the update and create actions will be

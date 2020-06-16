@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_16_134654) do
+ActiveRecord::Schema.define(version: 2020_06_16_195441) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_134654) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "link"
+    t.boolean "published", default: false
   end
 
   create_table "articles", force: :cascade do |t|
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_134654) do
     t.string "link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "published", default: false
   end
 
   create_table "extracts", force: :cascade do |t|
@@ -40,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_134654) do
     t.string "composer"
     t.string "musician"
     t.text "description"
+    t.boolean "published", default: false
   end
 
   create_table "pictures", force: :cascade do |t|
@@ -47,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_134654) do
     t.string "credits"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "published", default: false
   end
 
   create_table "repertories", force: :cascade do |t|
@@ -56,6 +60,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_134654) do
     t.string "show"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "published", default: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -74,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_06_16_134654) do
     t.string "link"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "published", default: false
   end
 
 end

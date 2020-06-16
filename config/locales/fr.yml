@@ -1,0 +1,44 @@
+fr:
+  activerecord:
+    models:
+      user: "utilisateur"
+      agenda: "date"
+      article: "article presse"
+      extract: "extrait"
+      picture: "photo"
+      repertory: "repertoire"
+      video: "vidéo"
+    attributes:
+      user:
+        first_name: "Prénom"
+        last_name: "Nom"
+        full_name: "Nom"
+        password: "Mot de passe"
+        password_confirmation: "Confirmation du mot de passe"
+        email: "Email"
+      agenda:
+        date: "Date"
+        hour: "Heure"
+        place: "Lieu"
+        role: "Rôle"
+        show: "Spectacle"
+        link: "URL"
+      article:
+        title: "Titre"
+        link: "URL"
+      extract:
+        title: "Titre"
+        composer: "Compositeur"
+        musician: "Musicien"
+        description: "Description"
+      picture:
+        title: "Titre"
+        credits: "Crédits"
+      repertory:
+        title: "Titre"
+        composer: "Compositeur"
+        role: "Rôle"
+        show: "Spectacle"
+      video:
+        title: "Titre"
+        link: "URL"

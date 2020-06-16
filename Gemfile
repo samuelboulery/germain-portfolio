@@ -34,6 +34,7 @@ gem 'simple_form'
 gem 'trestle'
 gem 'trestle-active_storage'
 gem 'trestle-auth'
+gem 'rails-i18n'
 
 group :development, :test do
   gem 'pry-byebug'

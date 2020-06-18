@@ -1,17 +1,9 @@
 class RepertoriesController < ApplicationController
-  before_action :set_repertory, only: :show
 
   def index
     @repertories = Repertory.all
-  end
-
-  def show
-  end
-
-  private
-
-  def set_repertory
-    @repertory = @repertories.find(params[:id])
+    @repertories_profane = @repertories.where(title: "Profane")
+    @repertories_sacre = @repertories.where(title: "Sacré")
   end
 
 end

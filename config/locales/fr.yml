@@ -1,4 +1,24 @@
 fr:
+  pictures:
+    index:
+      gallery: "Galerie"
+      picture: "Photographie"
+  articles:
+    index:
+      article: "Presse"
+  repertories:
+    index:
+      repertories: "Repertoires"
+      repertory: "Repertoire"
+  pages:
+    medias:
+      medias: "Medias"
+      extract: "Extrait musical"
+    contact:
+      contact: "Contact"
+      phones: "Téléphones"
+      email: "E-mail"
+      agency: "Agence"
   activerecord:
     models:
       user: "utilisateur"

@@ -19,6 +19,25 @@ fr:
       phones: "Téléphones"
       email: "E-mail"
       agency: "Agence"
+    home:
+      about: "A propos"
+      biography: "Biographie"
+      medias: "Media"
+      extracts: "Extraits"
+      agenda: "Agenda"
+      next_dates: "Prochaines dates"
+      repertory: "Répertoire"
+      bio_part1: "Natif de la région lyonnaise, Germain Bardot entre à l'Ecole Nationale de Musique de Villeurbanne en 2009, formation qu'il mène en parallèle de ses études d'Histoire. Il intègre ensuite la classe du ténor Jörg Dürmüller
+      à la Haute École de Musique de Lausanne (CH), où il obtient son Bachelor en 2016. Il poursuit son parcours au Studio suisse d’opéra, à la Haute École des Arts de Berne, et obtient son Master avec mention d’excellence
+      en 2018. "
+      bio_part2: "Durant son parcours, il suit des classes de maître avec Jeannette Fischer, Luisa Castellani, Leonardo Garcia Alarcon, Christian Immler, Hans Peter Blochwitz, Yvonne Naef et Jean-François Zygel."
+      bio_part3: "À 22 ans, il débute sur scène à Lyon avec le rôle de Godoïne dans Tristan de C. Belletante, création récompensée par la ville de Lyon. Il est ensuite le Prince dans la création suisse de Blanche Neige de Marius Felix Lange
+      à Fribourg. Il interprète aussi Tamino dans Die Zauberflöte für Kinder et Gonzalve dans l’Heure Espagnole de M. Ravel. Il participe à la saison 2017-2018 du Théâtre Orchestre Bienne-Soleure(CH) avec la création de Jost
+      Meier, Marie und Robert, et Iolanta de P. Tchaikovsky, dans le rôle d’Alméric. Pour l’obtention de son diplôme de Master, il incarne Don Giovanni dans l’opéra éponyme de G. Gazzaniga, ainsi que le Comte Guy de Kerdrel
+      dans La Grand’Tante, première œuvre lyrique de J. Massenet. Il prend régulièrement part aux productions du Nouvel Opéra de Fribourg, comme en 2019 où il est le deuxième prêtre et le premier homme d’armes dans La Flûte
+      enchantée."
+      bio_part4: "Il chante également de nombreux oratorios et œuvres du répertorie liturgique de Monteverdi à Poulenc, ce qui l’amène à collaborer entre autres avec l’Orchestre de Chambre de Fribourg et le Capriccio Barockorchester, ainsi
+      que des chefs de renom tel que Benjamin Levy."
   activerecord:
     models:
       user: "utilisateur"

@@ -1,0 +1,26 @@
+<div class="banner">
+  <img src="http://placehold.it/1000x200" alt="<%= t('.medias') %>">
+  <h1><%= t('.medias') %></h1>
+</div>
+
+ <!-- // START - Extracts // -->
+ <% @extracts.each do |extract| %>
+  <div>
+    <!-- // Here Extract - needs Cloudinary tag// -->
+    <img src="http://placehold.it/300x200" alt="<%= t('.extract') %> <%= extract.title %>">
+    <!-- // -->
+    <%= extract.title %>
+    <%= extract.composer %>
+    <%= extract.musician %>
+    <%= extract.description %>
+  </div>
+<% end %>
+
+
+ <% @videos.each do |video| %>
+ <div>
+    <!-- // Here Videos - Ttile can be removed // -->
+    <%= video.title %>
+    <iframe title="vimeo-player" src="<%= video.link %>" width="640" height="400" frameborder="0" allowfullscreen></iframe>
+  </div>
+<% end %>

@@ -1,2 +1,15 @@
-<h1>Pictures#index</h1>
-<p>Find me in app/views/pictures/index.html.erb</p>
+<div class="banner">
+  <img src="http://placehold.it/1000x200" alt="<%= t('.gallery') %>">
+  <h1><%= t('.gallery') %></h1>
+</div>
+
+ <!-- // START - Pictures // -->
+ <% @pictures.each do |picture| %>
+ <div>
+    <!-- // Here Picture - needs Cloudinary tag// -->
+    <img src="http://placehold.it/300x200" alt="<%= t('.picture') %> <%= picture.title %>">
+    <!-- // -->
+    <%= picture.title %>
+    <%= picture.credits %>
+  </div>
+<% end %>

@@ -1,2 +1,58 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Germain Bardot</h1>
+<p>Ténor</p>
+
+
+<!-- // EXTRACTS // -->
+<h2><%= t('.medias') %></h2>
+<h3><%= t('.extracts') %></h3>
+<% @extracts.each do |extract| %>
+  <div>
+    <!-- // Here Extract - needs Cloudinary tag// -->
+    <!-- // -->
+    <%= extract.title %>
+    <%= extract.composer %>
+    <%= extract.musician %>
+    <%= extract.description %>
+  </div>
+<% end %>
+
+<h2><%= t('.agenda') %></h2>
+<h3><%= t('.next_dates') %></h3>
+<!-- // AGENDAS //  -->
+<% @agendas.each do |agenda| %>
+  <div>
+    <!-- // Here Extract - needs Cloudinary tag// -->
+    <!-- // -->
+    <%= agenda.date %>
+    <%= agenda.hour %>
+    <%= agenda.place %>
+    <%= agenda.role %>
+    <%= agenda.show %>
+    <%= agenda.link %>
+  </div>
+<% end %>
+
+
+<!-- // BIO // -->
+<h2><%= t('.about') %></h2>
+<h3><%= t('.biography') %></h3>
+<%= t('.bio_part1') %>
+<%= t('.bio_part2') %>
+<%= t('.bio_part3') %>
+<%= t('.bio_part4') %>
+
+
+<!-- // REPERTORIES // -->
+<h2><%= t('.about') %></h2>
+<h3><%= t('.repertory') %></h3>
+<% @repertories.each do |repertory| %>
+  <div>
+    <%= repertory.role %>
+  </div>
+  <div>
+    <%= repertory.show %>
+  </div>
+  <div>
+    <%= repertory.composer %>
+  </div>
+<% end %>

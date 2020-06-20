@@ -8,7 +8,7 @@
   <div>
     <!-- // Here Extract - needs Cloudinary tag// -->
     <% if extract.music.attached? %>
-      //
+      <%= cloudinary_url(extract.music, :resource_type=>"video") %>
     <% end %>
     <!-- // -->
     <%= extract.title %>

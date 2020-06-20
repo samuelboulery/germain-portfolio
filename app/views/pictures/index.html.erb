@@ -7,7 +7,11 @@
  <% @pictures.each do |picture| %>
  <div>
     <!-- // Here Picture - needs Cloudinary tag// -->
-    <img src="http://placehold.it/300x200" alt="<%= t('.picture') %> <%= picture.title %>">
+    <% if picture.picture.attached? %>
+      <%= cl_image_tag("#{picture(picture)}", class:"") %>
+    <% else %>
+      <%= image_tag("#{picture(picture)}", class:"") %>
+    <% end %>
     <!-- // -->
     <%= picture.title %>
     <%= picture.credits %>

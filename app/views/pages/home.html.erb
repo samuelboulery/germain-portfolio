@@ -8,6 +8,9 @@
 <% @extracts.each do |extract| %>
   <div>
     <!-- // Here Extract - needs Cloudinary tag// -->
+    <% if extract.music.attached? %>
+      //
+    <% end %>
     <!-- // -->
     <%= extract.title %>
     <%= extract.composer %>
@@ -21,8 +24,6 @@
 <!-- // AGENDAS //  -->
 <% @agendas.each do |agenda| %>
   <div>
-    <!-- // Here Extract - needs Cloudinary tag// -->
-    <!-- // -->
     <%= agenda.date %>
     <%= agenda.hour %>
     <%= agenda.place %>

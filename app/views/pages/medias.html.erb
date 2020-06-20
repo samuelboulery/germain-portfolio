@@ -7,7 +7,9 @@
  <% @extracts.each do |extract| %>
   <div>
     <!-- // Here Extract - needs Cloudinary tag// -->
-    <img src="http://placehold.it/300x200" alt="<%= t('.extract') %> <%= extract.title %>">
+    <% if extract.music.attached? %>
+      //
+    <% end %>
     <!-- // -->
     <%= extract.title %>
     <%= extract.composer %>

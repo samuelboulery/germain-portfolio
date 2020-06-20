@@ -9,12 +9,20 @@
     <% if article.link.present? %>
       <% link_to article.link do %>
         <!-- // Here Article - needs Cloudinary tag// -->
-        <img src="http://placehold.it/300x200" alt="<%= t('.article') %> <%= article.title %>">
+        <% if article.picture.attached? %>
+          <%= cl_image_tag("#{picture(article)}", class:"") %>
+        <% else %>
+          <%= image_tag("#{picture(article)}", class:"") %>
+        <% end %>
         <!-- // -->
         <%= article.title %>
       <% end %>
     <% else %>
-      <img src="http://placehold.it/300x200" alt="<%= t('.article') %> <%= article.title %>">
+      <% if article.picture.attached? %>
+        <%= cl_image_tag("#{picture(article)}", class:"") %>
+      <% else %>
+        <%= image_tag("#{picture(article)}", class:"") %>
+      <% end %>
         <!-- // -->
       <%= article.title %>
     <% end %>

@@ -2,6 +2,9 @@ Trestle.resource(:articles) do
   menu do
     item :articles, icon: "fa fa-newspaper"
   end
+  active_storage_fields do
+    [:picture]
+  end
 
   # Customize the table columns shown on the index view.
   #
@@ -17,6 +20,7 @@ Trestle.resource(:articles) do
   form do |article|
     text_field :title
     text_field :link
+    active_storage_field :picture
     check_box :published
   end
 

@@ -67,16 +67,19 @@ fr:
         title: "Titre"
         link: "URL"
         published: "Publié"
+        picture: "Image"
       extract:
         title: "Titre"
         composer: "Compositeur"
         musician: "Musicien"
         description: "Description"
         published: "Publié"
+        music: "Extrait"
       picture:
         title: "Titre"
         credits: "Crédits"
         published: "Publié"
+        picture: "Photo"
       repertory:
         title: "Titre"
         composer: "Compositeur"

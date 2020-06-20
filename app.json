@@ -1,0 +1,6 @@
+{
+    "name": "Review post deploy script",
+    "scripts": {
+        "postdeploy": "bundle exec rake db:seed"
+    }
+}

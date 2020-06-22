@@ -9,13 +9,22 @@
   <div>
     <!-- // Here Extract - needs Cloudinary tag// -->
     <% if extract.music.attached? %>
-      <%= cloudinary_url(extract.music, :resource_type=>"video") %>
+      <%#= cl_video_tag("#{extract.music.key}") %>
+      <figure>
+      <figcaption>Listen to
+        <%= extract.title %>
+        <%= extract.composer %>
+        <%= extract.musician %>
+        <%= extract.description %>:</figcaption>
+      <audio
+          controls
+          src="<%= cloudinary_url(extract.music.key, :resource_type=>"video") %>">
+              Your browser does not support the
+              <code>audio</code> element.
+      </audio>
+      </figure>
     <% end %>
     <!-- // -->
-    <%= extract.title %>
-    <%= extract.composer %>
-    <%= extract.musician %>
-    <%= extract.description %>
   </div>
 <% end %>
 

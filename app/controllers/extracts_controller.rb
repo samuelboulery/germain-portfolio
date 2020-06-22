@@ -1,5 +1,5 @@
 class ExtractsController < ApplicationController
   def index
-    @extracts = Extract.all.where(published: true)
+    @extracts = Extract.published
   end
 end

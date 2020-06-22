@@ -1,9 +1,9 @@
 class RepertoriesController < ApplicationController
 
   def index
-    @repertories = Repertory.all.where(published: true)
-    @repertories_profane = @repertories.where(title: "Profane", published: true)
-    @repertories_sacre = @repertories.where(title: "Sacré", published: true)
+    @repertories = Repertory.published
+    @repertories_profane = @repertories.published.where(title: "Profane")
+    @repertories_sacre = @repertories.published.where(title: "Sacré")
   end
 
 end

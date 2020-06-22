@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
   def index
-    @pictures = Picture.all.where(published: true)
+    @pictures = Picture.published
   end
 end

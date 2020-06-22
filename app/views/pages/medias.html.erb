@@ -7,15 +7,24 @@
  <% @extracts.each do |extract| %>
   <div>
     <!-- // Here Extract - needs Cloudinary tag// -->
-    <img src="http://placehold.it/300x200" alt="<%= t('.extract') %> <%= extract.title %>">
-    <!-- // -->
-    <%= extract.title %>
-    <%= extract.composer %>
-    <%= extract.musician %>
-    <%= extract.description %>
+    <% if extract.music.attached? %>
+      <%#= cl_video_tag("#{extract.music.key}") %>
+      <figure>
+      <figcaption>Listen to
+        <%= extract.title %>
+        <%= extract.composer %>
+        <%= extract.musician %>
+        <%= extract.description %>:</figcaption>
+      <audio
+          controls
+          src="<%= cloudinary_url(extract.music.key, :resource_type=>"video") %>">
+              Your browser does not support the
+              <code>audio</code> element.
+      </audio>
+      </figure>
+    <% end %>
   </div>
 <% end %>
-
 
  <% @videos.each do |video| %>
  <div>

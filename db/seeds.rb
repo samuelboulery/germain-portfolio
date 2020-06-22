@@ -21,8 +21,8 @@ Picture.create(title: "Don Giovanni", published: true)
 Article.create(title: "Un Nouvel-An avec Mozart, Bizet, Verdi et 160 musiciens", published: true)
 Article.create(title: "La musique nous fait vivre de grandes aventures", published: true)
 
-Video.create(title: "Orphée et Eurydice (Offenbach), Bienne 2017", link:"https://vimeo.com/292941142", published: true)
-Video.create(title: "L'Heure Espagnole (Maurice Ravel), air de Gonzalve", link:"https://vimeo.com/219475032", published: true)
+Video.create(title: "Orphée et Eurydice (Offenbach), Bienne 2017", link:"https://player.vimeo.com/video/292941142")
+Video.create(title: "L'Heure Espagnole (Maurice Ravel), air de Gonzalve", link:"https://player.vimeo.com/video/219475032")
 
 Repertory.create(title: "Profane", show:"Don Giovanni o sia Il convitato di pietra", role:"Don Giovanni", composer: "G. Gazzaniga", published: true)
 Repertory.create(title: "Profane", show:"La Grand’Tante", role:"Guy de Kerdrel", composer: "J. Massenet", published: true)

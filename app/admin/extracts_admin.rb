@@ -2,6 +2,9 @@ Trestle.resource(:extracts) do
   menu do
     item :extracts, icon: "fa fa-music"
   end
+  active_storage_fields do
+    [:music]
+  end
 
   # Customize the table columns shown on the index view.
   #
@@ -21,6 +24,7 @@ Trestle.resource(:extracts) do
     text_field :composer
     text_field :musician
     text_field :description
+    active_storage_field :music
     check_box :published
   end
 

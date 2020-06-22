@@ -2,6 +2,9 @@ Trestle.resource(:pictures) do
   menu do
     item :pictures, icon: "fa fa-image"
   end
+  active_storage_fields do
+    [:picture]
+  end
 
   # Customize the table columns shown on the index view.
   #
@@ -17,6 +20,7 @@ Trestle.resource(:pictures) do
   form do |picture|
     text_field :title
     text_field :credits
+    active_storage_field :picture
     check_box :published
   end
 

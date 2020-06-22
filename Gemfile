@@ -35,6 +35,7 @@ gem 'trestle'
 gem 'trestle-active_storage'
 gem 'trestle-auth'
 gem 'rails-i18n'
+gem 'cloudinary', '~> 1.12.0'
 
 group :development, :test do
   gem 'pry-byebug'

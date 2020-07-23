@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+.header{
+    position: relative;
+    height: 80vh;
+    width: 90%;
+    background-image: url('header.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+    &__title{
+        position: absolute;
+        right: 20%;
+        top: 45%;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        h1{
+            font-size: 3em;
+        }
+        h3{
+            font-size: 2em;
+        }
+    }
+}

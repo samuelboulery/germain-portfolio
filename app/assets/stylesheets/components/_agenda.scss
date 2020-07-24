@@ -1,0 +1,61 @@
+.global-container{
+    padding: 0 20%;
+}
+.agenda{
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    width: 35em;
+    height: 70vh;
+    &__container{
+        overflow: scroll;
+        width: 100%;
+        height: 95%;
+        padding: 5%;
+    }
+    &__date{
+        padding: 1em 3em;
+        margin-bottom: 2em;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+        line-height: 2.5em;
+        &--flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        h4{
+            font-weight: bold;
+        }
+    } 
+}
+.background{
+    width: 35em;
+    height: 85vh;
+    position: absolute;
+    z-index: -50;
+    background-image: url('Iolanta.jpg');
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+}  
+
+.section{
+    position: relative;
+    margin: 10% 0 10% 0;
+    &__subtitle{
+        &--agenda{
+            margin-left: 3rem;
+        }
+    }
+    &__title{
+        
+        &--agenda{
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 0 0 1em 3rem;
+        }
+    }
+}

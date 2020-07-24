@@ -1,0 +1,22 @@
+<div class="section">
+    <p class="section__subtitle--agenda"><%= t('.agenda') %></p>
+    <h3 class="section__title--agenda"><%= t('.next_dates') %></h3>
+
+<!-- // AGENDAS //  -->
+<div class="agenda">
+    <div class="agenda__container">
+<% @agendas.each do |agenda| %>
+        <div class="agenda__date">
+            <h4><%= agenda.date %></h4>
+            <p><%= agenda.hour %></p>
+            <p><%= agenda.show %></p>
+            <div class="agenda__date--flex">
+                <p>Lieu : <%= link_to agenda.place, agenda.link, target: 'blank' %></p>
+                <p>Rôle : <%= agenda.role %></p>
+            </div> 
+        </div>
+        <% end %>
+    </div>
+</div>
+<div class="background"></div>
+</div>
